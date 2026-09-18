@@ -1,0 +1,14 @@
+domain:
+  task: black_box_optimization
+  input_modalities: [objective_function, constraints]
+  validation_group: problem_instance
+  primary_risk: unequal_evaluation_budgets_or_inconsistent_constraints
+  first_baseline: reproducible_random_or_local_search
+optimization:
+  direction: minimize
+  evaluation_budget: TBD
+  time_budget_sec: null
+  seeds: [0, 1, 2, 3, 4]
+  constraint_strategy: TBD
+report:
+  required: [best_value, median, mean, std, feasible_rate, best_so_far_curve]
