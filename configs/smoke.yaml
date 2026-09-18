@@ -1,0 +1,20 @@
+competition:
+  name: "The 2026 NeuroGolf Championship"
+  slug: "the-2026-neurogolf-championship"
+  metric: "competition-defined objective score"
+data:
+  input_dir: null
+  target: "objective"
+  sample_rows: 200
+validation:
+  strategy: holdout
+  n_splits: 2
+  shuffle: true
+run:
+  seed: 42
+  deterministic: true
+  output_root: outputs
+model:
+  name: smoke
+  params: {}
+

@@ -1,0 +1,23 @@
+competition:
+  name: "The 2026 NeuroGolf Championship"
+  slug: "the-2026-neurogolf-championship"
+  metric: "competition-defined objective score"
+
+data:
+  input_dir: null  # null => KAGGLE_INPUT_DIR, then data/raw
+  target: "objective"
+
+validation:
+  strategy: "identical evaluation budgets across multi-seed runs"
+  n_splits: 5
+  shuffle: true
+
+run:
+  seed: 42
+  deterministic: false
+  output_root: outputs
+
+model:
+  name: baseline
+  params: {}
+
